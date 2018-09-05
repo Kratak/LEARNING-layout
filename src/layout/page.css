@@ -31,7 +31,8 @@ html{
 .Container {
     background-color: var(--dark-100);
     margin: 0 auto;
-    min-height: 400px;
+    min-height: 700px;
+    padding-bottom: 30px;
     width: 1000px;
 }
 
@@ -59,7 +60,7 @@ html{
     cursor: pointer;
     background-color: var(--dark-100);
 }
-.mainart {
+.mainart div {
     margin-top: 40px;
     padding:10px 10px;
     display: flex;
@@ -67,17 +68,41 @@ html{
     flex-wrap: wrap;
     
 }
+/* .mainart div .con2 {
+    margin-top: 40px;
+    padding:10px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+} */
 
 .mainart article{
-    padding-bottom: 20px;
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.mainart article.con{
     width: 400px;
     padding: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.mainart article.con:first-child{
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 
 }
 .mainart article:last-child{
-    padding: 50px;
-    margin-left: 10px;
-    margin-right: auto;
+    /* padding: 50px; */
+    /* margin-left: 10px;
+    margin-right: auto; */
 }

@@ -96,12 +96,33 @@ const piano = {
 const vocals = {
 1:
 <span>
-
+I have been singing since I was a child (a bonus that comes from growing 
+up in a musical family!). I love music and songs and want to share my 
+passion and spread my knowledge with other enthusiastic fans. Whether 
+you are just starting out or you’re an amateur singer, I will personalise 
+every lesson based on your requests and goals. From reading the notes and 
+learning how to sing different tunes and scales, my lessons will match your 
+pace and aptitude. Please get in touch to discuss more about my classes and I will 
+ensure to make my learning sessions a rewarding and fun journey. 
 </span>,
 2:
 <span>
-    
+Additional charges apply if I need to travel to your location. 
+Please get in touch for a quick chat and more information. 
+Hope to hear from you soon.
 </span>
 };
+const contact={
+1:
+<span><h1>Contact me</h1></span>,
+2:
+<span>Email: contact.gintare@gmail.com</span>,
+3:
+<span><a href="https://www.facebook.com/ambergklessons/?modal=admin_todo_tour&notif_id=1535065032507837&notif_t=page_invite" target="_blank">Facebook</a></span>,
+4:
+<span>sss</span>,
+5:
+<span>sss</span>,
+};
 
-export {mainCont,guitar, piano};
+export {mainCont,guitar, piano, vocals, contact};
