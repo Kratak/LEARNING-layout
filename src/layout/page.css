@@ -1,0 +1,83 @@
+/* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z  */
+:root{
+    --red-2: hsl(355, 65%, 65%);
+    --red: hsl( 5, 48%, 51%);
+    --orange:   hsl( 29, 54%, 61%);
+    --orange-2: hsl( 39, 67%, 69%);
+    --cyan:   hsl(187, 47%, 55%);
+    --blue:   hsl(207, 82%, 66%);
+    --blue-2:   hsl(207, 71%, 49%);
+    --purple:   hsl(286, 60%, 67%); 
+    --green: hsl( 95, 38%, 62%); 
+    
+    --dark-100: #F5F5F5;
+    --dark-200: #EEEEEE;
+    --dark-300: #E0E0E0;
+    --dark-400: #BDBDBD;
+    --dark-500: #9E9E9E;
+    --dark-600: #757575;
+    --dark-700: #616161 ;
+    --dark-800: #424242;
+    --dark-900: #212121;
+    }
+*{
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-700);
+    box-sizing: border-box;
+}
+html{
+    background-color: var(--dark-500);
+}
+.Container {
+    background-color: var(--dark-100);
+    margin: 0 auto;
+    min-height: 400px;
+    width: 1000px;
+}
+
+.nava{
+    background-color: var(--dark-200);
+    display: flex;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+}
+.nava button {
+    background-color: transparent;
+    border-radius: 15px;
+    border-style: none;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0px;
+    width: 150px;
+}
+.nava button:hover{
+    cursor: pointer;
+    background-color: var(--dark-100);
+}
+.mainart {
+    margin-top: 40px;
+    padding:10px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.mainart article{
+    padding-bottom: 20px;
+    width: 400px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.mainart article:last-child{
+    padding: 50px;
+    margin-left: 10px;
+    margin-right: auto;
+}
