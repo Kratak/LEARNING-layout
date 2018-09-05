@@ -114,11 +114,11 @@ Hope to hear from you soon.
 };
 const contact={
 1:
-<span><h1>Contact me</h1></span>,
+<span><h1><i class="icon-mail-alt"></i> Contact me</h1></span>,
 2:
-<span>Email: contact.gintare@gmail.com</span>,
+<span><i class="icon-mail"></i> Email: contact.gintare@gmail.com</span>,
 3:
-<span><a href="https://www.facebook.com/ambergklessons/?modal=admin_todo_tour&notif_id=1535065032507837&notif_t=page_invite" target="_blank">Facebook</a></span>,
+<span><a href="https://www.facebook.com/ambergklessons/?modal=admin_todo_tour&notif_id=1535065032507837&notif_t=page_invite" target="_blank"> <i class="icon-facebook"></i>Facebook</a></span>,
 4:
 <span>sss</span>,
 5:

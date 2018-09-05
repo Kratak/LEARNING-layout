@@ -1,0 +1,7 @@
+
+.icon-vcard:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e803'; } /* '' */
+.icon-home:before { content: '\e81f'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-google:before { content: '\f1a0'; } /* '' */

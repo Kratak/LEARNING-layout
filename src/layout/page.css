@@ -26,8 +26,14 @@
     box-sizing: border-box;
 }
 html{
-    background-color: var(--dark-500);
+    background-color: white;
 }
+.icon-vcard:before { content: '\e800'; } 
+.icon-mail:before { content: '\e803'; } 
+.icon-home:before { content: '\e81f'; } 
+.icon-facebook:before { content: '\f09a'; } 
+.icon-mail-alt:before { content: '\f0e0'; } 
+.icon-google:before { content: '\f1a0'; } 
 .Container {
     background-color: var(--dark-100);
     margin: 0 auto;
@@ -81,7 +87,7 @@ html{
     width: 500px;
     padding: 10px;
     margin-bottom: 40px;
-    margin-left: auto;
+    margin-left: 50px;
     margin-right: auto;
 
 }

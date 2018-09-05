@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './page.css';
+// import '../../public/css/animation.css';
 // import Contact from './componets/contact';
 import Fotter from './componets/fotter';
 import {Main, Ome} from './componets/main'
@@ -24,11 +25,11 @@ class Page extends Component {
     return (
       <div className="Container">
         <div className="nava">
-         <button onClick={this.gohome.bind(this)}>HOME</button>
+         <button onClick={this.gohome.bind(this)}><i class="icon-home"></i>HOME</button>
          <button onClick={this.gogug.bind(this)}>Guitar</button>
          <button onClick={this.govoc.bind(this)}>Vocals</button>
          <button onClick={this.govpian.bind(this)}>Piano</button>
-         <button onClick={this.gocon.bind(this)}>Contact</button>
+         <button onClick={this.gocon.bind(this)}><i class="icon-mail"></i>Contact</button>
         </div>
         <Main val = {this.state.def} />
         <Main val ={this.state.con} />
