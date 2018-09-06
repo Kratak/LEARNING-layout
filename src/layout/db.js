@@ -125,4 +125,29 @@ const contact={
 <span>sss</span>,
 };
 
-export {mainCont,guitar, piano, vocals, contact};
+const pricelists ={
+    1:
+    <span>
+    <h2>Price List:</h2>
+    </span>,
+    2:
+    <span>
+    <h5>Piano / Vocals</h5>
+    <br/>
+    <p>30min - £20</p>
+    <p>1hr- £35</p>
+    <p>5hrs- £165 (instead of £175)</p>
+    <p>10hrs - £300 (instead of £350</p>
+    </span>,
+    3:
+    <span>
+    <h5>Guitar</h5>
+    <br/>
+    <p>30min - £17</p>
+    <p>1hr- £25</p>
+    <p>10hrs - £225 (instead of 250)</p>
+    </span>,
+    };
+
+
+export {mainCont,guitar, piano, vocals, contact, pricelists};

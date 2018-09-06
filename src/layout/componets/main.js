@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../page.css';
-import {mainCont,guitar, piano, vocals, contact} from '../db';
+import {mainCont,guitar, piano, vocals, contact, pricelists} from '../db';
 
 const Ome={
     def:{},
@@ -34,6 +34,12 @@ const Ome={
     <article className="con">{contact[3]}</article>
     {/* <article className="con">{contact[4]}</article>
     <article className="con">{contact[5]}</article> */}
+    </div>,
+    pricelist:
+    <div>
+    <article>{pricelists[1]}</article>
+    <article>{pricelists[2]}</article>
+    <article>{pricelists[3]}</article>
     </div>,
     
 }

@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 
 import './page.css';
-// import '../../public/css/animation.css';
-// import Contact from './componets/contact';
-import Fotter from './componets/fotter';
-import {Main, Ome} from './componets/main'
 
-// import {mainCont,guitar, piano, vocals} from './db';
+import Fotter from './componets/fotter';
+import {Main, Ome} from './componets/main';
 
 class Page extends Component {
     constructor(){
@@ -18,6 +15,7 @@ class Page extends Component {
         voc: Ome.vocalss,
         pian: Ome.pianos,
         con: Ome.contact,
+        plist: Ome.pricelist,
     };
 }
   
@@ -25,10 +23,11 @@ class Page extends Component {
     return (
       <div className="Container">
         <div className="nava">
-         <button onClick={this.gohome.bind(this)}><i class="icon-home"></i>HOME</button>
+         <button onClick={this.gohome.bind(this)}><i class="icon-home"></i>Home</button>
          <button onClick={this.gogug.bind(this)}>Guitar</button>
          <button onClick={this.govoc.bind(this)}>Vocals</button>
          <button onClick={this.govpian.bind(this)}>Piano</button>
+         <button onClick={this.goplist.bind(this)}>Price List</button>
          <button onClick={this.gocon.bind(this)}><i class="icon-mail"></i>Contact</button>
         </div>
         <Main val = {this.state.def} />
@@ -41,26 +40,37 @@ class Page extends Component {
      this.setState(
          {def: this.state.home}
      )
+     document.title = 'Gintare Kairyte';
   }
   gogug(){
     this.setState(
         {def: this.state.gug}
     )
+    document.title = 'Guitar lesson - Gintare Kairyte';
  }
  govoc(){
     this.setState(
         {def: this.state.voc}
     )
+    document.title = 'Vocal lesson - Gintare Kairyte';
  }
  govpian(){
     this.setState(
         {def: this.state.pian}
     )
+    document.title = 'Piano lesson - Gintare Kairyte';
  }
  gocon(){
     this.setState(
         {def: this.state.cont}
     )
+    document.title = 'Contact - Gintare Kairyte';
+ }
+ goplist(){
+    this.setState(
+        {def: this.state.plist}
+    )
+    document.title = 'Price List - Gintare Kairyte';
  }
 }
 

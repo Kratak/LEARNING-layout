@@ -2,8 +2,9 @@
 :root{
     --red-2: hsl(355, 65%, 65%);
     --red: hsl( 5, 48%, 51%);
-    --orange:   hsl( 29, 54%, 61%);
+    --orange:   rgb(199, 186, 161);
     --orange-2: hsl( 39, 67%, 69%);
+    --orange-3:rgb(238, 160, 50);
     --cyan:   hsl(187, 47%, 55%);
     --blue:   hsl(207, 82%, 66%);
     --blue-2:   hsl(207, 71%, 49%);
@@ -21,12 +22,12 @@
     --dark-900: #212121;
     }
 *{
-    font-family: 'Roboto', sans-serif;
-    color: var(--dark-700);
+    font-family: 'RobSource Sans Pro', sans-serif;
+    color: var(--orange);
     box-sizing: border-box;
 }
 html{
-    background-color: white;
+    background-color:var(--orange-3);
 }
 .icon-vcard:before { content: '\e800'; } 
 .icon-mail:before { content: '\e803'; } 
@@ -35,7 +36,7 @@ html{
 .icon-mail-alt:before { content: '\f0e0'; } 
 .icon-google:before { content: '\f1a0'; } 
 .Container {
-    background-color: var(--dark-100);
+    background-color: black;
     margin: 0 auto;
     min-height: 700px;
     padding-bottom: 30px;
@@ -43,12 +44,13 @@ html{
 }
 
 .nava{
-    background-color: var(--dark-200);
+    background-color: black;
     display: flex;
     padding: 10px;
     padding-left: 100px;
     padding-right: 100px;
     width: 100%;
+    
 }
 .nava button {
     background-color: transparent;
@@ -64,7 +66,7 @@ html{
 }
 .nava button:hover{
     cursor: pointer;
-    background-color: var(--dark-100);
+    background-color: var(--dark-900);
 }
 .mainart div {
     margin-top: 40px;
