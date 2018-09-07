@@ -14,16 +14,19 @@ const Ome={
     </div>,
     guitars:
     <div>
+      <article>{guitar[0]}</article>
       <article>{guitar[1]}</article>
       <article>{guitar[2]}</article>
     </div>,
     pianos:
     <div>
+      <article>{piano[0]}</article>
       <article>{piano[1]}</article>
       <article>{piano[2]}</article>
     </div>,
     vocalss:
     <div>
+      <article>{vocals[0]}</article>
       <article>{vocals[1]}</article>
       <article>{vocals[2]}</article>
     </div>,

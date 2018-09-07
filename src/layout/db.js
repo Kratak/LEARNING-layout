@@ -54,6 +54,13 @@ const mainCont = {
      
 
 const guitar = {
+    0:
+    <img 
+    className="imgweb" 
+    src="http://gintarekairyte.com/DB/guitarpic.jpeg" 
+    alt="Picture of black classic guitar, on concret wall background, kind of art picture"
+    />,
+
     1:<span>
         I have the expertise and over 5 years of experience to enhance 
         your skills and take it to new heights. Whether you are just starting 
@@ -74,6 +81,12 @@ const guitar = {
 };
 
 const piano = {
+    0:
+    <img 
+    className="imgweb" 
+    src="http://gintarekairyte.com/DB/pianopic.jpeg" 
+    alt="Picture of piano keyboard, firts plan it's clear but last plan it's blur"
+    />,
     1:
     <span>
     I took piano lessons for over 7 years and I can proudly say that it 
@@ -94,6 +107,14 @@ const piano = {
 };
 
 const vocals = {
+0:
+<img 
+className="imgweb" 
+src="http://gintarekairyte.com/DB/vocalspic.jpeg" 
+alt="Picture of peron singing to microphone, visible it' 
+only bottom part of face on left top corner, and microphone on bottom right corner, 
+there are on plain black bacgroud."
+/>,
 1:
 <span>
 I have been singing since I was a child (a bonus that comes from growing 

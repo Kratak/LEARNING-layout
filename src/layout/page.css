@@ -29,6 +29,20 @@
 html{
     background-color:var(--orange-3);
 }
+/*for firefox dotted line on buttons*/
+
+a:focus,
+a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+	border: 0;
+	outline: 0;
+}
+
 .icon-vcard:before { content: '\e800'; } 
 .icon-mail:before { content: '\e803'; } 
 .icon-home:before { content: '\e81f'; } 
@@ -69,11 +83,12 @@ html{
     background-color: var(--dark-900);
 }
 .mainart div {
-    margin-top: 40px;
+    margin-top: 10px;
     padding:10px 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
     
 }
 /* .mainart div .con2 {
@@ -91,6 +106,7 @@ html{
     margin-bottom: 40px;
     margin-left: 50px;
     margin-right: auto;
+    z-index: 1;
 
 }
 .mainart article.con{
@@ -109,8 +125,110 @@ html{
     margin-right: auto;
 
 }
+
+.mainart img:first-child{
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 390px;
+    z-index: 0;
+}
 .mainart article:last-child{
     /* padding: 50px; */
     /* margin-left: 10px;
     margin-right: auto; */
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+/* (min-width: 576px) and */
+@media  (max-width: 767px) {
+	.Container {
+        width: 90vw;
+    }
+    .nava{
+        display: flex;
+        flex-direction: column;
+        
+        padding: 10px;
+        padding-left: auto;
+        padding-right: auto;
+        width: 100%;
+    }
+    .mainart div {
+        margin-top: 10px;
+        position: static;
+    }
+    .mainart article{
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .mainart article.con{
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .mainart article.con:first-child{
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .mainart img:first-child{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+    .Container {
+        width: 85vw;
+    }
+    .nava{
+        background-color: black;
+        display: flex;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+        
+    }
+    .mainart div {
+        margin-top: 10px;
+        position: static;
+    }
+    .mainart img:first-child{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      
+    }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+	
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+	
 }
