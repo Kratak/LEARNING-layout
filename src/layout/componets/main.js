@@ -1,32 +1,32 @@
 import React, { Component } from 'react';
 import '../page.css';
-import {mainCont,guitar, piano, vocals, contact, pricelists} from '../db';
+import {default_home,guitar, piano, vocals, contact, pricelists} from '../db';
 
-const Ome={
+const MainContent={
     def:{},
-    mainc: 
+    default_home: 
     <div>
-        <article>{mainCont[1]}</article>
-        <article>{mainCont[2]}</article>
-        <article>{mainCont[3]}</article>
-        <article>{mainCont[4]}</article>
-        <article>{mainCont[5]}</article>
+        <article>{default_home[1]}</article>
+        <article>{default_home[2]}</article>
+        <article>{default_home[3]}</article>
+        <article>{default_home[4]}</article>
+        <article>{default_home[5]}</article>
     </div>,
-    guitars:
+    guitar:
     <div>
-      <article>{guitar[0]}</article>
+      <article className="article-corect">{guitar[0]}</article>
       <article>{guitar[1]}</article>
       <article>{guitar[2]}</article>
     </div>,
-    pianos:
+    piano:
     <div>
-      <article>{piano[0]}</article>
+      <article className="article-corect">{piano[0]}</article>
       <article>{piano[1]}</article>
       <article>{piano[2]}</article>
     </div>,
-    vocalss:
+    vocals:
     <div>
-      <article>{vocals[0]}</article>
+      <article className="article-corect">{vocals[0]}</article>
       <article>{vocals[1]}</article>
       <article>{vocals[2]}</article>
     </div>,
@@ -41,8 +41,8 @@ const Ome={
     pricelist:
     <div>
     <article>{pricelists[1]}</article>
-    <article>{pricelists[2]}</article>
-    <article>{pricelists[3]}</article>
+    <div className="table-pricelists">{pricelists[2]}</div>
+    <div className="table-pricelists">{pricelists[3]}</div>
     </div>,
     
 }
@@ -56,4 +56,4 @@ const Main =(props) => {
     
   }
 
-  export {Main,Ome};
+  export {Main,MainContent};

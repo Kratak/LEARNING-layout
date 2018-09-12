@@ -20,6 +20,7 @@
     --dark-700: #616161 ;
     --dark-800: #424242;
     --dark-900: #212121;
+    --dark-999: #080808;
     }
 *{
     font-family: 'RobSource Sans Pro', sans-serif;
@@ -51,40 +52,80 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .icon-google:before { content: '\f1a0'; } 
 .Container {
     background-color: black;
-    margin: 0 auto;
+    margin:auto;
     min-height: 700px;
     padding-bottom: 30px;
+    padding-top: 150px;
     width: 1000px;
+    min-height: 110vh;
+    position: relative;
 }
 
 .nava{
     background-color: black;
+    background: url("http://gintarekairyte.com/DB/5-line.png");
+    box-sizing: border-box;
+    /* background-repeat: repeat-x; */
+    background-size: contain, cover;
+    /* background-position-y: center;  */
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
     display: flex;
     padding: 10px;
     padding-left: 100px;
     padding-right: 100px;
-    width: 100%;
+    height: 80px;
+    width: 98%;
     
 }
+
+.top-picture{
+position: absolute;
+background: url("http://gintarekairyte.com/DB/home-page-top-background.jpg");
+background-size: cover;
+background-position: center;
+top: 0;
+left: 0;
+width: 100%;
+height: 150px;
+
+
+}
+.music-key{
+position: absolute;
+background: url("http://gintarekairyte.com/DB/g-key.png");
+background-size: cover;
+background-position: center;
+top: 30;
+left: 20px;
+width: 50px;
+height: 50px;
+z-index: 25;
+
+}
 .nava button {
-    background-color: transparent;
-    border-radius: 15px;
-    border-style: none;
+    /* background-image: url("http://gintarekairyte.com/DB/5-line.png"); */
+    background-color: black;
+    border-radius: 5px;
+    border-color: var(--orange-3);
+    border-style: solid;
     height: 35px;
     font-size: 16px;
     font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto 10px;
     padding: 5px 0px;
     width: 150px;
 }
 .nava button:hover{
     cursor: pointer;
+    background-color: transparent;
     background-color: var(--dark-900);
 }
 .mainart div {
-    margin-top: 10px;
-    padding:10px 10px;
+    margin-top: 0px;
+    padding:0px 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -107,11 +148,21 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     margin-left: 50px;
     margin-right: auto;
     z-index: 1;
+}
+.table-pricelists{
+margin-left: auto;
+margin-right: auto;
+width: 48%;
+
+background-color: var(--dark-999);
+border-radius: 10px;
+
 
 }
+
 .mainart article.con{
     width: 400px;
-    padding: 10px;
+    padding: 0px 10px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -126,12 +177,13 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 }
 
-.mainart img:first-child{
+.mainart img, .article-corect{
     position: absolute;
-    top: 70px;
+    top: 10px;
     right: 30px;
-    width: 390px;
+    width: 380px;
     z-index: 0;
+    margin-bottom: 0px;
 }
 .mainart article:last-child{
     /* padding: 50px; */
@@ -144,18 +196,33 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 @media  (max-width: 767px) {
 	.Container {
         width: 90vw;
+        /* padding-top: 150px; */
+        position: relative;
+
     }
+    
     .nava{
         display: flex;
         flex-direction: column;
-        
-        padding: 10px;
-        padding-left: auto;
-        padding-right: auto;
+        position: static;
+        background: none;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
+        
+    }
+    .nava button{
+        width: 230px;
+        height: 80px;
+        position: static;
+        margin: 2px auto;
+    }
+    .mainart div:first-child {
+        margin-top: 170px;
+        position: static;
     }
     .mainart div {
-        margin-top: 10px;
+        margin-top: 30px;
         position: static;
     }
     .mainart article{
@@ -182,13 +249,30 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
         margin-right: auto;
     
     }
-    .mainart img:first-child{
+    .article-corect, .mainart img{
         position: static;
-        margin-left: auto;
-        margin-right: auto;
+        
         width: 90%;
       
     }
+    .music-key{
+        left: 5px;
+    }
+    .table-pricelists{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    /* .top-picture{
+        position: absolute;
+        background: url("http://gintarekairyte.com/DB/home-page-top-background.jpg");
+        background-size: cover;
+        background-position: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+    } */
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -197,6 +281,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	
     .Container {
         width: 85vw;
+    }
+    .music-key{
+        left: 5px;
     }
     .nava{
         background-color: black;
@@ -217,6 +304,18 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
         margin-right: auto;
         width: 90%;
       
+    }
+    .article-corect, .mainart img{
+        position: static;
+        
+        width: 90%;
+      
+    }
+    .nava button{
+        width: 90px;
+        height: 40px;
+        position: static;
+        margin: 5px auto;
     }
 
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './page.css';
 
-const mainCont = {
+const default_home = {
     1:
         <span>
         Music is wonderful to add to the atmosphere of a party,
@@ -135,9 +135,9 @@ Hope to hear from you soon.
 };
 const contact={
 1:
-<span><h1><i class="icon-mail-alt"></i> Contact me</h1></span>,
+<span><h1><i class="icon-mail-alt"></i>Contact me</h1></span>,
 2:
-<span><i class="icon-mail"></i> Email: contact.gintare@gmail.com</span>,
+<span><i class="icon-mail"></i>Email: contact.gintare@gmail.com</span>,
 3:
 <span><a href="https://www.facebook.com/ambergklessons/?modal=admin_todo_tour&notif_id=1535065032507837&notif_t=page_invite" target="_blank"> <i class="icon-facebook"></i>Facebook</a></span>,
 4:
@@ -153,22 +153,20 @@ const pricelists ={
     </span>,
     2:
     <span>
-    <h5>Piano / Vocals</h5>
-    <br/>
-    <p>30min - £20</p>
-    <p>1hr- £35</p>
-    <p>5hrs- £165 (instead of £175)</p>
-    <p>10hrs - £300 (instead of £350</p>
+    <h4>Piano / Vocals</h4>
+    
+    <p>Half hour lessons<br/><br/> 1 lesson - £20  <br/>5 lessons - £90  <br/>10 lessons - £180 </p><br/>
+    <p>1 hour lessons <br/><br/>1 lesson - £35  <br/>5 lessons - 165 <br/>10 lessons - £315 </p><br/>
     </span>,
     3:
     <span>
-    <h5>Guitar</h5>
-    <br/>
-    <p>30min - £17</p>
-    <p>1hr- £25</p>
-    <p>10hrs - £225 (instead of 250)</p>
-    </span>,
+    <h4>Guitar</h4>
+    
+    <p>Half hour lessons <br/><br/>1 lesson - £17 <br/>5 lessons - £75 <br/>10 lessons - £140</p><br/>
+    <p>1 Hour lessons <br/><br/>1 lesson x £25 <br/>5 lessons - £115 <br/>10 lessons - £225 </p><br/>
+    </span>
+
     };
 
 
-export {mainCont,guitar, piano, vocals, contact, pricelists};
+export {default_home,guitar, piano, vocals, contact, pricelists};

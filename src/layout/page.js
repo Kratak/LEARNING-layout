@@ -3,72 +3,74 @@ import React, { Component } from 'react';
 import './page.css';
 
 import Fotter from './componets/fotter';
-import {Main, Ome} from './componets/main';
+import {Main, MainContent} from './componets/main';
 
 class Page extends Component {
     constructor(){
     super();
     this.state={
-        def: Ome.mainc,
-        home: Ome.mainc,
-        gug: Ome.guitars,
-        voc: Ome.vocalss,
-        pian: Ome.pianos,
-        con: Ome.contact,
-        plist: Ome.pricelist,
+        default_home: MainContent.default_home,
+        home: MainContent.default_home,
+        guitar: MainContent.guitar,
+        vocals: MainContent.vocals,
+        piano: MainContent.piano,
+        contact: MainContent.contact,
+        pricelist: MainContent.pricelist,
     };
 }
   
     render() {
     return (
       <div className="Container">
+        <image className="top-picture"></image>
         <div className="nava">
+        <div className="music-key" ></div>
          <button onClick={this.gohome.bind(this)}><i class="icon-home"></i>Home</button>
-         <button onClick={this.gogug.bind(this)}>Guitar</button>
-         <button onClick={this.govoc.bind(this)}>Vocals</button>
-         <button onClick={this.govpian.bind(this)}>Piano</button>
-         <button onClick={this.goplist.bind(this)}>Price List</button>
-         <button onClick={this.gocon.bind(this)}><i class="icon-mail"></i>Contact</button>
+         <button onClick={this.goGuitar.bind(this)}>Guitar</button>
+         <button onClick={this.goVocal.bind(this)}>Vocals</button>
+         <button onClick={this.goPiano.bind(this)}>Piano</button>
+         <button onClick={this.goPriceList.bind(this)}>Price List</button>
+         <button onClick={this.goContact.bind(this)}><i class="icon-mail"></i>Contact</button>
         </div>
-        <Main val = {this.state.def} />
-        <Main val ={this.state.con} />
+        <Main val = {this.state.default_home} />
+        <Main val ={this.state.contact} />
         <Fotter />
       </div>
     );
   }
   gohome(){
      this.setState(
-         {def: this.state.home}
+         {default_home: this.state.home}
      )
      document.title = 'Gintare Kairyte';
   }
-  gogug(){
+  goGuitar(){
     this.setState(
-        {def: this.state.gug}
+        {default_home: this.state.guitar}
     )
     document.title = 'Guitar lesson - Gintare Kairyte';
  }
- govoc(){
+ goVocal(){
     this.setState(
-        {def: this.state.voc}
+        {default_home: this.state.vocals}
     )
     document.title = 'Vocal lesson - Gintare Kairyte';
  }
- govpian(){
+ goPiano(){
     this.setState(
-        {def: this.state.pian}
+        {default_home: this.state.piano}
     )
     document.title = 'Piano lesson - Gintare Kairyte';
  }
- gocon(){
+ goContact(){
     this.setState(
-        {def: this.state.cont}
+        {default_home: this.state.contacts}
     )
     document.title = 'Contact - Gintare Kairyte';
  }
- goplist(){
+ goPriceList(){
     this.setState(
-        {def: this.state.plist}
+        {default_home: this.state.pricelist}
     )
     document.title = 'Price List - Gintare Kairyte';
  }
