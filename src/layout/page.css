@@ -92,6 +92,7 @@ width: 100%;
 height: 150px;
 
 
+
 }
 .music-key{
 position: absolute;
@@ -146,6 +147,7 @@ z-index: 25;
     padding: 10px;
     margin-bottom: 40px;
     margin-left: 50px;
+    margin-top: 30px;
     margin-right: auto;
     z-index: 1;
 }
@@ -171,6 +173,7 @@ border-radius: 10px;
 .mainart article.con:first-child{
     width: 600px;
     padding: 10px;
+    
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -208,6 +211,7 @@ border-radius: 10px;
         background: none;
         margin-left: auto;
         margin-right: auto;
+        min-height: 220px;
         width: 100%;
         
     }
@@ -218,11 +222,11 @@ border-radius: 10px;
         margin: 2px auto;
     }
     .mainart div:first-child {
-        margin-top: 170px;
+        margin-top: 70px;
         position: static;
     }
     .mainart div {
-        margin-top: 30px;
+        margin-top: 0px;
         position: static;
     }
     .mainart article{
@@ -317,7 +321,6 @@ border-radius: 10px;
         position: static;
         margin: 5px auto;
     }
-
 }
 
 /*Large devices (desktops, 992px and up)*/

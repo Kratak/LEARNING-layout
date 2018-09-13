@@ -6,6 +6,7 @@ const MainContent={
     def:{},
     default_home: 
     <div>
+        <article className="article-corect">{default_home[0]}</article>
         <article>{default_home[1]}</article>
         <article>{default_home[2]}</article>
         <article>{default_home[3]}</article>

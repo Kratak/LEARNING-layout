@@ -3,6 +3,13 @@ import React, { Component } from 'react';
 import './page.css';
 
 const default_home = {
+    0:
+    <img 
+    className="imgweb" 
+    src="http://gintarekairyte.com/DB/home-page-main-content-img.jpg" 
+    alt="This is Gintare Kairyte, playing guitar in park at fall seasson"
+    />,
+    
     1:
         <span>
         Music is wonderful to add to the atmosphere of a party,
@@ -156,14 +163,14 @@ const pricelists ={
     <h4>Piano / Vocals</h4>
     
     <p>Half hour lessons<br/><br/> 1 lesson - £20  <br/>5 lessons - £90  <br/>10 lessons - £180 </p><br/>
-    <p>1 hour lessons <br/><br/>1 lesson - £35  <br/>5 lessons - 165 <br/>10 lessons - £315 </p><br/>
+    <p>1 hour lessons <br/><br/>1 lesson - £35  <br/>5 lessons - £165 <br/>10 lessons - £315 </p><br/>
     </span>,
     3:
     <span>
     <h4>Guitar</h4>
     
     <p>Half hour lessons <br/><br/>1 lesson - £17 <br/>5 lessons - £75 <br/>10 lessons - £140</p><br/>
-    <p>1 Hour lessons <br/><br/>1 lesson x £25 <br/>5 lessons - £115 <br/>10 lessons - £225 </p><br/>
+    <p>1 Hour lessons <br/><br/>1 lesson - £25 <br/>5 lessons - £115 <br/>10 lessons - £225 </p><br/>
     </span>
 
     };
