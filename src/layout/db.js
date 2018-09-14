@@ -44,9 +44,7 @@ const default_home = {
         <span>
         Whether you want guitar, piano, or singing lessons, I personalise every 
         session according to the requests and needs of each student and try
-        to make the most of it for the best possible outcome. For block 
-        bookings I offer a discount of 10% for 5 lessons and 15% for ten lessons. 
-        Additionally, when you refer a friend, you get a free lesson!
+        to make the most of it for the best possible outcome. 
         </span>,
     5:
         <span>
@@ -160,7 +158,7 @@ const pricelists ={
     </span>,
     2:
     <span>
-    <h4>Piano / Vocals</h4>
+    <h4>Piano</h4>
     
     <p>Half hour lessons<br/><br/> 1 lesson - £20  <br/>5 lessons - £90  <br/>10 lessons - £180 </p><br/>
     <p>1 hour lessons <br/><br/>1 lesson - £35  <br/>5 lessons - £165 <br/>10 lessons - £315 </p><br/>

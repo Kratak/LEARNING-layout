@@ -27,7 +27,7 @@ class Page extends Component {
         <div className="music-key" ></div>
          <button onClick={this.gohome.bind(this)}><i class="icon-home"></i>Home</button>
          <button onClick={this.goGuitar.bind(this)}>Guitar</button>
-         <button onClick={this.goVocal.bind(this)}>Vocals</button>
+         {/* <button onClick={this.goVocal.bind(this)}>Vocals</button> */}
          <button onClick={this.goPiano.bind(this)}>Piano</button>
          <button onClick={this.goPriceList.bind(this)}>Price List</button>
          <button onClick={this.goContact.bind(this)}><i class="icon-mail"></i>Contact</button>
