@@ -28,7 +28,14 @@
     box-sizing: border-box;
 }
 html{
-    background-color:var(--orange-3);
+    background: url("http://gintarekairyte.com/DB/home-page-top-background.jpg");
+    /* background-size: 5200px 3300px;
+    background-position: -1150px -450px ;
+    background-repeat: no-repeat; */
+    background-size: 170% 170%;
+    background-position: -250px -150px;
+    background-repeat: no-repeat;
+    
 }
 /*for firefox dotted line on buttons*/
 
@@ -57,7 +64,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     padding-bottom: 30px;
     padding-top: 150px;
     width: 1000px;
-    min-height: 110vh;
+    min-height: 180vh;
     position: relative;
 }
 
@@ -100,7 +107,7 @@ height: 150px;
     background: url("http://gintarekairyte.com/DB/g-key.png");
     background-size: cover;
     background-position: center;
-    top: 10px;
+    top: 5px;
     left: 15px;
     width: 70px;
     height: 70px;
@@ -125,8 +132,13 @@ height: 150px;
     background-color: transparent;
     background-color: var(--dark-900);
 }
+
+.mainart{
+    
+}
 .mainart div {
     margin-top: 0px;
+    
     padding:0px 10px;
     display: flex;
     flex-direction: row;
@@ -146,7 +158,7 @@ height: 150px;
 .mainart article{
     width: 500px;
     padding: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     margin-left: 50px;
     margin-top: 30px;
     margin-right: auto;
@@ -189,11 +201,11 @@ border-radius: 10px;
     z-index: 0;
     margin-bottom: 0px;
 }
-.mainart article:last-child{
-    /* padding: 50px; */
-    /* margin-left: 10px;
-    margin-right: auto; */
-}
+/* .mainart article:last-child{
+    padding: 50px;
+    margin-left: 10px;
+    margin-right: auto;
+} */
 
 /*Small devices (landscape phones, 576px and up)*/
 /* (min-width: 576px) and */
